@@ -8,16 +8,17 @@
           integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
+<h2>Create a user</h2>
 <div class="container-sm mt-5 mx-auto">
-    <form action="/signup" method="POST">
+    <form action="/signUp" method="post">
         <div class="mb-3">
-            <label for="createUser" class="form-label">Enter user Name</label>
-            <input type="text" class="form-control" id="createUser">
+            <label for="username" class="form-label">Enter user Name</label>
+            <input type="text" name="username" class="form-control" id="username">
             <div id="userHelp" class="form-text">Create a new user.</div>
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" id="password">
         </div>
         <button type="submit" class="btn btn-primary">Sign Up</button>
     </form>
